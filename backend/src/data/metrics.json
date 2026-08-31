@@ -1,86 +1,88 @@
-[
-  {
-    "id": "B",
-    "technique": "Coverage Delta",
-    "classification": "Test Suite Effectiveness Tracking",
-    "metric": "Discovery Power Assessment",
-    "measure": "Evaluates how many unique logical journeys through the code are validated by current test cases, measuring the ratio of executed paths to total possible paths.",
-    "value": 0.74,
-    "unit": "ratio",
-    "executedPaths": 148,
-    "totalPaths": 200,
-    "status": "adequate",
-    "threshold": 0.7,
-    "trend": [
-      0.61,
-      0.65,
-      0.69,
-      0.71,
-      0.74
-    ],
-    "trendLabels": [
-      "Sprint-1",
-      "Sprint-2",
-      "Sprint-3",
-      "Sprint-4",
-      "Sprint-5"
-    ],
-    "createdAt": "2026-08-31T00:00:00.000Z"
-  },
-  {
-    "id": "D",
-    "technique": "Coverage Delta",
-    "classification": "Change Impact Analysis",
-    "metric": "Ripple Effect Mapping",
-    "measure": "Identifies which specific logical paths are altered by a code change and which downstream paths might be affected, measuring the logical surface area of a modification to predict unintended side effects.",
-    "value": 12,
-    "unit": "paths",
-    "affectedPaths": 12,
-    "totalChangedFiles": 3,
-    "status": "moderate",
-    "threshold": 20,
-    "trend": [
-      5,
-      8,
-      15,
-      12,
-      12
-    ],
-    "trendLabels": [
-      "Commit-1",
-      "Commit-2",
-      "Commit-3",
-      "Commit-4",
-      "Commit-5"
-    ],
-    "createdAt": "2026-08-31T00:00:00.000Z"
-  },
-  {
-    "id": "F",
-    "technique": "Coverage Delta",
-    "classification": "Quality Improvement Measurement",
-    "metric": "Structural Health Benchmarking",
-    "measure": "Provides a quantitative score of how much simpler or safer the code becomes after refactoring, measuring the successful reduction of complex untestable paths into cleaner sequences.",
-    "value": 67,
-    "unit": "score",
-    "complexityBefore": 142,
-    "complexityAfter": 75,
-    "status": "improving",
-    "threshold": 50,
-    "trend": [
-      30,
-      42,
-      55,
-      61,
-      67
-    ],
-    "trendLabels": [
-      "Refactor-1",
-      "Refactor-2",
-      "Refactor-3",
-      "Refactor-4",
-      "Refactor-5"
-    ],
-    "createdAt": "2026-08-31T00:00:00.000Z"
-  }
+﻿[
+    {
+        "id":  "B",
+        "measure":  "Creates a bridge between where a variable is defined and at least one line of code where that specific value is later read or modified, measuring the integrity of the data journey.",
+        "metric":  "Data Path Correlation",
+        "unit":  "ratio",
+        "createdAt":  "2026-08-31T00:00:00.000Z",
+        "technique":  "All Definition Coverage",
+        "trendLabels":  [
+                            "Sprint-1",
+                            "Sprint-2",
+                            "Sprint-3",
+                            "Sprint-4",
+                            "Sprint-5"
+                        ],
+        "correlatedUsePairs":  194,
+        "status":  "adequate",
+        "value":  0.79,
+        "threshold":  0.75,
+        "definitionPoints":  245,
+        "classification":  "Definition-Use Mapping",
+        "trend":  [
+                      0.61,
+                      0.68,
+                      0.72,
+                      0.76,
+                      0.79
+                  ]
+    },
+    {
+        "id":  "D",
+        "measure":  "Identifies variables that are assigned a value but are never actually used by the program, helping reduce technical debt by spotting zombie variables that clutter memory without purpose.",
+        "metric":  "Dead Data Identification",
+        "unit":  "count",
+        "deadVariables":  14,
+        "totalVariables":  245,
+        "createdAt":  "2026-08-31T00:00:00.000Z",
+        "deadPercentage":  5.7,
+        "technique":  "All Definition Coverage",
+        "trendLabels":  [
+                            "Sprint-1",
+                            "Sprint-2",
+                            "Sprint-3",
+                            "Sprint-4",
+                            "Sprint-5"
+                        ],
+        "status":  "moderate",
+        "value":  14,
+        "threshold":  10,
+        "classification":  "Uncovered Definition Detection",
+        "trend":  [
+                      31,
+                      27,
+                      22,
+                      18,
+                      14
+                  ]
+    },
+    {
+        "id":  "F",
+        "measure":  "Provides a verifiable report of the variable state at every stage of execution for debugging and compliance, ensuring that any data-related failure can be traced back to its specific definition point.",
+        "metric":  "Audit Trail Verification",
+        "unit":  "audit-status",
+        "createdAt":  "2026-08-31T00:00:00.000Z",
+        "trendLabels":  [
+                            "Audit-1",
+                            "Audit-2",
+                            "Audit-3",
+                            "Audit-4",
+                            "Audit-5"
+                        ],
+        "technique":  "All Definition Coverage",
+        "auditableEvents":  1840,
+        "complianceScore":  96.2,
+        "value":  "VERIFIED",
+        "trackedDefinitions":  245,
+        "status":  "passed",
+        "classification":  "Reporting Validation",
+        "threshold":  90,
+        "auditHistory":  [
+                             "PASS",
+                             "PASS",
+                             "PASS",
+                             "FAIL",
+                             "PASS"
+                         ]
+    }
 ]
