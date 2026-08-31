@@ -1,0 +1,155 @@
+﻿[
+  {
+    "name": "ADC-FULL",
+    "present": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "removed": [],
+    "description": "All 6 metrics present â€” full coverage"
+  },
+  {
+    "name": "ADC-R1-A",
+    "present": [
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "removed": [
+      "A"
+    ],
+    "description": "Removed: A | Present: B, C, D, E, F"
+  },
+  {
+    "name": "ADC-R1-B",
+    "present": [
+      "A",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "removed": [
+      "B"
+    ],
+    "description": "Removed: B | Present: A, C, D, E, F"
+  },
+  {
+    "name": "ADC-R1-C",
+    "present": [
+      "A",
+      "B",
+      "D",
+      "E",
+      "F"
+    ],
+    "removed": [
+      "C"
+    ],
+    "description": "Removed: C | Present: A, B, D, E, F"
+  },
+  {
+    "name": "ADC-R1-D",
+    "present": [
+      "A",
+      "B",
+      "C",
+      "E",
+      "F"
+    ],
+    "removed": [
+      "D"
+    ],
+    "description": "Removed: D | Present: A, B, C, E, F"
+  },
+  {
+    "name": "ADC-R1-E",
+    "present": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "F"
+    ],
+    "removed": [
+      "E"
+    ],
+    "description": "Removed: E | Present: A, B, C, D, F"
+  },
+  {
+    "name": "ADC-R1-F",
+    "present": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "removed": [
+      "F"
+    ],
+    "description": "Removed: F | Present: A, B, C, D, E"
+  },
+  {
+    "name": "ADC-R2",
+    "present": [
+      "A",
+      "C",
+      "E",
+      "F"
+    ],
+    "removed": [
+      "B",
+      "D"
+    ],
+    "description": "Removed: B, D | Present: A, C, E, F"
+  },
+  {
+    "name": "ADC-R3",
+    "present": [
+      "B",
+      "D",
+      "F"
+    ],
+    "removed": [
+      "A",
+      "C",
+      "E"
+    ],
+    "description": "Removed: A, C, E | Present: B, D, F"
+  },
+  {
+    "name": "ADC-R4",
+    "present": [
+      "E",
+      "F"
+    ],
+    "removed": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "description": "Removed: A, B, C, D | Present: E, F"
+  },
+  {
+    "name": "ADC-R5",
+    "present": [
+      "F"
+    ],
+    "removed": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "description": "Removed: A, B, C, D, E | Present: F"
+  }
+]

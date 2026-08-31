@@ -1,0 +1,30 @@
+[
+  {
+    "id": "F",
+    "technique": "Coverage Delta",
+    "classification": "Quality Improvement Measurement",
+    "metric": "Structural Health Benchmarking",
+    "measure": "Provides a quantitative score of how much simpler or safer the code becomes after refactoring, measuring the successful reduction of complex untestable paths into cleaner sequences.",
+    "value": 67,
+    "unit": "score",
+    "complexityBefore": 142,
+    "complexityAfter": 75,
+    "status": "improving",
+    "threshold": 50,
+    "trend": [
+      30,
+      42,
+      55,
+      61,
+      67
+    ],
+    "trendLabels": [
+      "Refactor-1",
+      "Refactor-2",
+      "Refactor-3",
+      "Refactor-4",
+      "Refactor-5"
+    ],
+    "createdAt": "2026-08-31T00:00:00.000Z"
+  }
+]

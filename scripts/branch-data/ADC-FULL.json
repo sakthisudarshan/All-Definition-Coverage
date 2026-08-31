@@ -1,0 +1,169 @@
+[
+  {
+    "id": "A",
+    "technique": "Coverage Delta",
+    "classification": "Regression Testing Monitoring",
+    "metric": "Coverage Delta %",
+    "measure": "Change in test coverage percentage between current build and previous baseline — monitors coverage trends",
+    "value": 4.7,
+    "unit": "%",
+    "baseline": 78.3,
+    "current": 83,
+    "status": "improved",
+    "threshold": 0,
+    "trend": [
+      72.1,
+      74.3,
+      76.8,
+      78.3,
+      83
+    ],
+    "trendLabels": [
+      "Build-1",
+      "Build-2",
+      "Build-3",
+      "Build-4",
+      "Build-5"
+    ],
+    "createdAt": "2026-08-31T00:00:00.000Z"
+  },
+  {
+    "id": "B",
+    "technique": "Coverage Delta",
+    "classification": "Test Suite Effectiveness Tracking",
+    "metric": "Discovery Power Assessment",
+    "measure": "Evaluates how many unique logical journeys through the code are validated by current test cases, measuring the ratio of executed paths to total possible paths.",
+    "value": 0.74,
+    "unit": "ratio",
+    "executedPaths": 148,
+    "totalPaths": 200,
+    "status": "adequate",
+    "threshold": 0.7,
+    "trend": [
+      0.61,
+      0.65,
+      0.69,
+      0.71,
+      0.74
+    ],
+    "trendLabels": [
+      "Sprint-1",
+      "Sprint-2",
+      "Sprint-3",
+      "Sprint-4",
+      "Sprint-5"
+    ],
+    "createdAt": "2026-08-31T00:00:00.000Z"
+  },
+  {
+    "id": "C",
+    "technique": "Coverage Delta",
+    "classification": "CI/CD Quality Gate Enforcement",
+    "metric": "Deployment Readiness Guard",
+    "measure": "Acts as an automated threshold that prevents code from being merged if the coverage delta is negative, ensuring that only logically verified code moves toward production.",
+    "value": "PASS",
+    "unit": "gate-status",
+    "coverageDelta": 4.7,
+    "status": "passed",
+    "threshold": 0,
+    "gateHistory": [
+      "PASS",
+      "PASS",
+      "FAIL",
+      "PASS",
+      "PASS"
+    ],
+    "trendLabels": [
+      "PR-12",
+      "PR-13",
+      "PR-14",
+      "PR-15",
+      "PR-16"
+    ],
+    "createdAt": "2026-08-31T00:00:00.000Z"
+  },
+  {
+    "id": "D",
+    "technique": "Coverage Delta",
+    "classification": "Change Impact Analysis",
+    "metric": "Ripple Effect Mapping",
+    "measure": "Identifies which specific logical paths are altered by a code change and which downstream paths might be affected, measuring the logical surface area of a modification to predict unintended side effects.",
+    "value": 12,
+    "unit": "paths",
+    "affectedPaths": 12,
+    "totalChangedFiles": 3,
+    "status": "moderate",
+    "threshold": 20,
+    "trend": [
+      5,
+      8,
+      15,
+      12,
+      12
+    ],
+    "trendLabels": [
+      "Commit-1",
+      "Commit-2",
+      "Commit-3",
+      "Commit-4",
+      "Commit-5"
+    ],
+    "createdAt": "2026-08-31T00:00:00.000Z"
+  },
+  {
+    "id": "E",
+    "technique": "Coverage Delta",
+    "classification": "New Code Testing Validation",
+    "metric": "Fresh Logic Proofing",
+    "measure": "Specifically measures whether newly added lines or paths have corresponding test cases, ensuring that the MVP growth is supported by an equal growth in testing depth.",
+    "value": 91.2,
+    "unit": "%",
+    "newLinesAdded": 125,
+    "newLinesCovered": 114,
+    "status": "good",
+    "threshold": 80,
+    "trend": [
+      75,
+      82.3,
+      88,
+      90.1,
+      91.2
+    ],
+    "trendLabels": [
+      "Sprint-1",
+      "Sprint-2",
+      "Sprint-3",
+      "Sprint-4",
+      "Sprint-5"
+    ],
+    "createdAt": "2026-08-31T00:00:00.000Z"
+  },
+  {
+    "id": "F",
+    "technique": "Coverage Delta",
+    "classification": "Quality Improvement Measurement",
+    "metric": "Structural Health Benchmarking",
+    "measure": "Provides a quantitative score of how much simpler or safer the code becomes after refactoring, measuring the successful reduction of complex untestable paths into cleaner sequences.",
+    "value": 67,
+    "unit": "score",
+    "complexityBefore": 142,
+    "complexityAfter": 75,
+    "status": "improving",
+    "threshold": 50,
+    "trend": [
+      30,
+      42,
+      55,
+      61,
+      67
+    ],
+    "trendLabels": [
+      "Refactor-1",
+      "Refactor-2",
+      "Refactor-3",
+      "Refactor-4",
+      "Refactor-5"
+    ],
+    "createdAt": "2026-08-31T00:00:00.000Z"
+  }
+]
