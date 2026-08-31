@@ -1,58 +1,59 @@
-[
-  {
-    "id": "E",
-    "technique": "Coverage Delta",
-    "classification": "New Code Testing Validation",
-    "metric": "Fresh Logic Proofing",
-    "measure": "Specifically measures whether newly added lines or paths have corresponding test cases, ensuring that the MVP growth is supported by an equal growth in testing depth.",
-    "value": 91.2,
-    "unit": "%",
-    "newLinesAdded": 125,
-    "newLinesCovered": 114,
-    "status": "good",
-    "threshold": 80,
-    "trend": [
-      75,
-      82.3,
-      88,
-      90.1,
-      91.2
-    ],
-    "trendLabels": [
-      "Sprint-1",
-      "Sprint-2",
-      "Sprint-3",
-      "Sprint-4",
-      "Sprint-5"
-    ],
-    "createdAt": "2026-08-31T00:00:00.000Z"
-  },
-  {
-    "id": "F",
-    "technique": "Coverage Delta",
-    "classification": "Quality Improvement Measurement",
-    "metric": "Structural Health Benchmarking",
-    "measure": "Provides a quantitative score of how much simpler or safer the code becomes after refactoring, measuring the successful reduction of complex untestable paths into cleaner sequences.",
-    "value": 67,
-    "unit": "score",
-    "complexityBefore": 142,
-    "complexityAfter": 75,
-    "status": "improving",
-    "threshold": 50,
-    "trend": [
-      30,
-      42,
-      55,
-      61,
-      67
-    ],
-    "trendLabels": [
-      "Refactor-1",
-      "Refactor-2",
-      "Refactor-3",
-      "Refactor-4",
-      "Refactor-5"
-    ],
-    "createdAt": "2026-08-31T00:00:00.000Z"
-  }
+﻿[
+    {
+        "id":  "E",
+        "measure":  "Measures how the data flow reacts when a definition results in an unexpected state such as None or an overflow, identifying risks where valid variable definitions might lead to a crash at use.",
+        "metric":  "Null and Boundary Flow Analysis",
+        "unit":  "%",
+        "createdAt":  "2026-08-31T00:00:00.000Z",
+        "trendLabels":  [
+                            "Build-1",
+                            "Build-2",
+                            "Build-3",
+                            "Build-4",
+                            "Build-5"
+                        ],
+        "technique":  "All Definition Coverage",
+        "nullDefinitions":  38,
+        "status":  "good",
+        "value":  88.6,
+        "testedNullPaths":  34,
+        "threshold":  85,
+        "classification":  "Edge Case Handling",
+        "trend":  [
+                      70,
+                      76.5,
+                      81.2,
+                      85.9,
+                      88.6
+                  ]
+    },
+    {
+        "id":  "F",
+        "measure":  "Provides a verifiable report of the variable state at every stage of execution for debugging and compliance, ensuring that any data-related failure can be traced back to its specific definition point.",
+        "metric":  "Audit Trail Verification",
+        "unit":  "audit-status",
+        "createdAt":  "2026-08-31T00:00:00.000Z",
+        "trendLabels":  [
+                            "Audit-1",
+                            "Audit-2",
+                            "Audit-3",
+                            "Audit-4",
+                            "Audit-5"
+                        ],
+        "technique":  "All Definition Coverage",
+        "auditableEvents":  1840,
+        "complianceScore":  96.2,
+        "value":  "VERIFIED",
+        "trackedDefinitions":  245,
+        "status":  "passed",
+        "classification":  "Reporting Validation",
+        "threshold":  90,
+        "auditHistory":  [
+                             "PASS",
+                             "PASS",
+                             "PASS",
+                             "FAIL",
+                             "PASS"
+                         ]
+    }
 ]
